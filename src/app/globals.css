@@ -3,31 +3,61 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+  --background-color: #0d0d0d; 
+  --highlight-color: #1a1a1a; 
+  --button-color: #0070f3; 
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: var(--background-color);
+  color: #fff;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+table {
+  border-collapse: collapse;
+  width: 80%;
+  margin: 30px auto;
+  text-align: left;
+  background-color: rgb(var(--background-start-rgb));
+  color: rgb(var(--foreground-rgb));
+  border: none;
+}
+
+th, td {
+  padding: 15px 20px;
+}
+th {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+tr:hover {
+  background-color: #444;
+}
+
+select {
+  padding: 5px;
+  font-size: 14px;
+  background-color: #333;
+  color: white;
+  border: 1px solid #ddd;
+}
+
+button {
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #3b5998; 
 }
