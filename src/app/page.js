@@ -3,6 +3,7 @@
 
 import React, { useEffect, useState } from "react";
 import Table from "./components/Table";
+import Header from "./components/Header";
 import { v4 as uuidv4 } from "uuid";
 
 export default function Home() {
@@ -34,10 +35,13 @@ export default function Home() {
   };
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-gray-900 to-gray-800 text-white">
-      <div className="w-full">
-        <Table data={data} onSplit={handleSplit} />
-      </div>
-    </main>
+    <div>
+      <Header />
+      <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-gray-900 to-gray-800 text-white pt-10">
+        <div className="w-full">
+          <Table data={data} onSplit={handleSplit} />
+        </div>
+      </main>
+    </div>
   );
 }
