@@ -78,6 +78,7 @@ yarn add react@latest react-dom@latest
 
 - `src/app/page.js`: Main entry point of the application.
 - `src/app/pages/index.js`: Component that fetches data from the API.
+- `src/app/components/Header.js`: Component that displays logo at the top.
 - `src/app/components/Table.js`: Main table component that manages the table state and renders the table.
 - `src/app/components/TableCell.js`: Component responsible for rendering each cell in the table.
 - `src/app/components/TableHeader.js`: Component responsible for rendering the table header.
