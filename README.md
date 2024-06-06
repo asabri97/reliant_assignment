@@ -27,7 +27,7 @@ This project is a Next.js 14 application that implements a table using an open-s
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/reliant-ai-assignment.git
+git clone https://github.com/asabri97/reliant-ai-assignment.git
 ```
 
 2. Navigate to the project directory:
@@ -77,6 +77,7 @@ yarn add react@latest react-dom@latest
 ### Project Structure
 
 - `src/app/page.js`: Main entry point of the application.
+- `src/app/pages/index.js`: Component that fetches data from the API.
 - `src/app/components/Table.js`: Main table component that manages the table state and renders the table.
 - `src/app/components/TableCell.js`: Component responsible for rendering each cell in the table.
 - `src/app/components/TableHeader.js`: Component responsible for rendering the table header.
